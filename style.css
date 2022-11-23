@@ -1,0 +1,392 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+   max-width: 100%; 
+}
+img{
+  max-width:100%;
+}
+
+.container .Netflix-logo svg{
+  fill:#e50914;
+  height:37px;
+}
+
+.container .head{
+   position: absolute;
+  top:0;
+  left:0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  z-index:1
+}
+
+
+.container .head .button{
+  color: #fff;
+  text-decoration: none;
+  background-color: #e50914;
+  padding: 7px 17px;
+  border-radius: 3px;
+
+}
+
+ .banner{
+  width:100%;
+  height:100vh;
+  position:relative;
+  justify-content: center;
+  align-items: center;
+} 
+
+.banner::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index:1;
+  background: linear-gradient(to bottom, #000, transparent);
+}
+
+.banner::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index:1;
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.banner .fit{
+  width: 100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  object-fit: cover;
+}
+
+.banner .box{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  z-index: 1;
+}
+
+.banner .box .heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner .box .heading h1{
+  font-size: 3.125rem;
+  color:#fff;
+  letter-spacing: 2px;
+   width:60% ;
+   text-align: center;
+}
+
+.banner .box .heading h5{
+  font-size: 1.625rem;
+  color:#fff;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.banner .box .heading p{
+  font-size: 1.2rem;
+  color:#fff;
+  padding: 15px 0;
+  padding-bottom: 20px;
+ 
+  font-weight: 500;
+  
+}
+
+.banner .box .search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.banner .box .search input{
+  font-size: 16px;
+  border: 1px solid #8c8c8c;
+  outline: none;
+  color: #000;
+  border-radius: 2px;
+  padding-top: 10px; 
+  padding-left: 10px;
+  padding-right:0;
+  padding-bottom: 0;
+  min-width: 400px;
+  height:60px;
+  align-items: center;
+}
+
+.banner .box .search a{
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  border-radius: 2px;
+  background: #e50914;
+  box-shadow:0 1px 0 rgba(0,0,0,0.45);
+  font-size: 1.625rem;
+  padding: 15px;
+  min-width: 310px;
+  /* padding-top: 0; 
+  padding-left: 20px;
+  padding-right:20px;
+  padding-bottom: 0; */
+  /* margin: auto; */
+  /* align-items: center; */
+  /* padding: 0 30px; */
+  text-align: center; 
+}
+
+ .two{
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+  gap: 46px; 
+  padding: 70px  70px;
+   background-color: #000; 
+   border-top: 2px solid grey;
+   border-bottom: 2px solid grey;
+   max-height: 100vh;
+  
+  
+} 
+
+
+
+.left-content {
+  position: relative;
+  /* padding-left: 50px; */
+}
+
+.left-content  .our-story-card-img{
+  width: 400px;
+  position: relative;
+  
+}
+  
+
+.left-content  .our-story-card-animation{
+  width: 293px;
+   
+  position:absolute;
+  top: 62px;
+  left:53px;
+   
+  } 
+
+  /* top:60px;
+  left:60px; */
+  
+  /* height: 100%; */
+  /* transform: translate(-50%,-50%); */
+  
+  /* height: 100%;
+  left: 50%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  
+  width: 100%; */
+
+
+.right-content h1 {
+  font-size: 3.125rem;
+  color: #fff;
+  /* min-width: 470px; */
+  
+}
+
+.right-content p {
+  font-size: 1.625rem;
+  color:#fff;
+  /* min-width: 740px; */
+  
+}
+
+.media {
+  position: relative;
+  /* margin: 0 auto; */
+  background-color: #000;
+  color: #fff;
+}
+
+section div.download{
+  border:2px solid #666;
+  border-radius: 15px;
+  padding:10px;
+  height:95px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+    position: absolute;
+    background-color: #000;
+  bottom: 20px;
+   width: 60%;
+   /* gap:15px;   */
+   left:50% ;
+   transform: translateX(-50%); 
+    /* margin-left: -140px;  */
+
+
+}
+div .download{
+  margin: 0 auto;
+  align-items: center;
+}
+
+ section div.download img {
+  height: 100%;
+  width:auto;
+}  
+
+.three{
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+  gap: 46px; 
+  color: #fff;
+  padding: 70px  45px;
+   background-color: #000; 
+   border-top: 2px solid grey;
+   border-bottom: 2px solid grey;
+   max-height: 100vh;
+  
+  
+} 
+
+
+/* header .new-netflix{
+  display:flex;
+  justify-content: space-between; 
+  align-items: center;  */
+  /* width: 100%; */
+   /* padding: 26px 56px;  */
+    /* gap: 25%; */
+  
+   /* width: 50%;  */
+
+
+/* .container .left-netflix{
+  width:45%;
+
+} 
+
+ .container .right-netflix{
+  width:35%;
+  
+}  */
+
+
+
+
+
+  /* height:20px;
+/* body{
+  font-family:Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  background-color: black;
+  color: #fff;
+  /* margin:auto; */
+  /*  */
+  /* display:flex;
+  justify-content: space-between;{ */
+  /*  */
+
+
+/* header{
+  padding: 3%; 
+  position: absolute;
+  
+  width: 100%;
+  z-index: 5;
+
+}
+ 
+/* header a.logo{
+  display: block;
+} */
+/* 
+  */
+ 
+/* 
+header a.button{
+  /* display: inline-block; */
+  /* background-color: #e50914;
+  color:#fff;
+  text-decoration: none;
+  
+
+/*  */
+/* div.splash div.background img{
+  max-width: 100%;
+   opacity: 0.6; 
+
+} */ 
+/*  
+div.splash {
+  position:relative;
+}
+div.splash h1{
+  font-size: 3.125rem;
+  margin-top: 13px;
+  margin-bottom: 29px;
+  font-weight: bold;
+  
+}
+div.splash h2{
+  font-size: 1.625rem;
+  font-weight: normal;
+}
+iv.splash h3{
+  font-size: 1.2rem;
+  font-weight: normal;
+  
+} */
+
+
+
+
+/* 
+div.splash div.content{
+  max-width: 655px;
+  position: absolute;
+  inset: 0;
+  max-width: 655px;
+  /* left:50%; */
+  /* margin-left: -327.5px; */
+  /* margin:auto; */
+   /* display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+} */
+/* 
+div.splash input{
+  display: flex;
+  padding: 10px;
+  font-size: 1.2rem;
+} */ 
+ 
